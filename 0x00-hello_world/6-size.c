@@ -1,12 +1,21 @@
 #include <stdio.h>
 
-/*
- *  main - Entry point
- *  Return: Always 0 (Success)
+/**
+ * main - print the string in the printf function
+ *
+ * Description: using the main function
+ * this prigram should print out the same function
+ * Return: Always 0(Success)
  */
 
 int main(void)
 {
+	char c;
+	int i;
+	long li;
+	long long lli;
+	float f;
+
 	printf("Size of a char: %zu byte(s)\n", sizeof(char));
 	printf("Size of an int: %zu byte(s)\n", sizeof(int));
 	printf("Size of a long int: %zu byte(s)\n", sizeof(long int));
