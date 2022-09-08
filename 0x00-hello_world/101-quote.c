@@ -2,9 +2,11 @@
 #include <unistd.h>
 
 /**
- *main - Entry point
- *Return: Always 1
- * 
+ * main - print the string in write function
+ *
+ * Description: using the main function 
+ * the program prints and that piece of art is useful" - Dora Korpar, 2015-10-19"
+ * Return: Always 1(Success)
  */
 
 int main(void)
