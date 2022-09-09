@@ -1,22 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - print 0123456789 using putchar
+ * main - Prints numbers between 0 to 9.
+ *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int n = '0';
+	int i;
 
-	while (n <= '9')
+	for (i = 48; i < 58; i++)
 	{
-		putchar(n);
-								
-		n++;
+		putchar(i);
 	}
-
 	putchar('\n');
-
 	return (0);
 }
