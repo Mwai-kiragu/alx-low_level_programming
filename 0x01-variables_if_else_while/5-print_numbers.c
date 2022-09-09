@@ -1,21 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - print 0123456789
+ * main - Prints numbers from 0 to 9.
+ *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int n = 0;
+	int i;
 
-	while (n < 10)
+	for (i = 0; i < 10; i++)
 	{
-		printf("%i", n);
-		n++;			
+		printf("%d", i);
 	}
-
 	putchar('\n');
-
 	return (0);
 }
