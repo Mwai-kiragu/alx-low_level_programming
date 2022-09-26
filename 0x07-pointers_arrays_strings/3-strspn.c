@@ -1,31 +1,31 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
- *  * _strspn - gets the length of a prefix substring.
- *   * @s: character to print
- *    * @accept: character
- *     * Return: i.
- *      */
+ * _strspn - gets the length of a prefix substring.
+ * @s: character to print
+ * @accept: character
+ * Return: i.
+ */
 unsigned int _strspn(char *s, char *accept)
 {
-	int count;
+int count;
 
-	while (*s != '\0')
+while (*s != '\0')
+{
+	while (*accept != '\0')
 	{
-			while (*accept != '\0')
-					{
-								if (*s == *accept)
-												break;
-											count++;
-														accept++;
+		if (*s == *accept)
+			break;
+			count++;
+			accept++;
 
-																	s++;
-
-																		}
-			if (*accept == '\0')
-					break;
+			s++;
 
 	}
-			return (count + 1);
+if (*accept == '\0')
+	break;
+
+}
+		return (count + 1);
 }
